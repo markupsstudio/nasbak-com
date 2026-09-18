@@ -1,0 +1,83 @@
+/* ==========================================================================
+   NAS-BAK Real Estate — Design Tokens
+   Change values here to re-theme the entire site. Nothing below this file
+   should contain a hard-coded color, spacing value, font, radius, or shadow.
+   ========================================================================== */
+
+:root {
+
+  /* ---- Color: pulled directly from the NAS-BAK flyer + logo ---- */
+  --clr-cream:        #F8F1E7;  /* primary page background */
+  --clr-cream-alt:     #F1E4CE; /* secondary background, for section rhythm */
+  --clr-white:         #FFFFFF;
+
+  --clr-brown-950:     #2B1A0D; /* near-black brown — headings, body text, dark sections */
+  --clr-brown-800:     #40260F; /* secondary dark brown */
+  --clr-brown-700:      #5C3317; /* brand brown — from the logo's dark half */
+
+  --clr-copper:        #C1712F; /* primary accent — from the flyer's badges */
+  --clr-copper-dark:   #9C5B26; /* hover / active state for copper elements */
+  --clr-copper-light:  #EAD9C3; /* faint copper tint for chips/backgrounds */
+
+  --clr-tan:           #C7AC7C; /* soft gold — from the logo's light half */
+  --clr-muted:         #7A6752; /* secondary / caption text */
+  --clr-border:        #E6D8C2; /* hairline borders and dividers */
+
+  --clr-on-dark:            #F8F1E7;            /* text on dark-brown sections */
+  --clr-on-dark-muted:      rgba(248, 241, 231, 0.72);
+  --clr-on-dark-border:     rgba(248, 241, 231, 0.18);
+
+  --clr-success: #3F7A4D;
+  --clr-error:   #B3432B;
+
+  /* ---- Typography ---- */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --fs-xs:   0.8125rem;                                     /* 13px */
+  --fs-sm:   0.9375rem;                                     /* 15px */
+  --fs-base: 1rem;                                          /* 16px */
+  --fs-md:   1.125rem;                                      /* 18px */
+  --fs-lg:   clamp(1.25rem, 1.19rem + 0.3vw, 1.5rem);       /* 20-24px */
+  --fs-xl:   clamp(1.6rem, 1.4rem + 0.9vw, 2.1rem);         /* 26-34px */
+  --fs-2xl:  clamp(2.1rem, 1.75rem + 1.6vw, 2.9rem);        /* 34-46px */
+  --fs-3xl:  clamp(2.5rem, 1.9rem + 2.6vw, 3.6rem);         /* 40-58px */
+  --fs-hero: clamp(2.75rem, 1.9rem + 3.8vw, 4.75rem);       /* 44-76px */
+
+  --lh-tight:  1.1;
+  --lh-snug:   1.3;
+  --lh-normal: 1.6;
+
+  /* ---- Spacing scale ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.25rem;
+  --space-xl:  3.5rem;
+  --space-2xl: 5rem;
+  --space-3xl: 7rem;
+
+  /* ---- Layout ---- */
+  --container-width: 1240px;
+  --container-pad: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* ---- Radius ---- */
+  --radius-sm:   10px;
+  --radius-md:   16px;
+  --radius-lg:   28px;
+  --radius-pill: 999px;
+
+  /* ---- Shadow (warm-tinted, not neutral grey) ---- */
+  --shadow-sm: 0 2px 10px rgba(43, 26, 13, 0.08);
+  --shadow-md: 0 12px 28px rgba(43, 26, 13, 0.14);
+  --shadow-lg: 0 24px 56px rgba(43, 26, 13, 0.22);
+
+  /* ---- Motion ---- */
+  --transition-base: 200ms ease;
+  --transition-slow: 500ms cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* ---- Header height (used to offset anchor scrolling) ---- */
+  --header-h: 84px;
+}
